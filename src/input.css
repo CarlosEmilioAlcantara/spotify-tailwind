@@ -5,3 +5,33 @@
 .container {
     @apply mx-auto max-w-[140rem] w-full;
 }
+
+@layer components {
+    /* .header__nav {
+
+    } */
+    .header__nav.open {
+        @apply right-0 opacity-100;
+    }
+
+    .branding.open {
+        @apply absolute bottom-12 left-10;
+    }
+
+    .toggle-menu.open {
+        @apply absolute right-3 top-3;
+    }
+}
+
+.toggle-menu.open span:first-child {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.toggle-menu.open span:nth-child(2) {
+    opacity: 0;
+    display: none;
+}
+
+.toggle-menu.open span:last-child {
+    transform: rotate(-45deg) translate(3px, -3px);
+}
