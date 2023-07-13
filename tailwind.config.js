@@ -2,6 +2,20 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
+    screens: {
+      'sm': '0px',
+      
+      'lsm': '700px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '1000px',
+
+      'lg': '1200px',
+      // => @media (min-width: 1024px) { ... }
+
+      // 'xl': '1280px',
+      // // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       colors: {
         'hover' : '#1ed760',

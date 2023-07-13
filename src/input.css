@@ -11,7 +11,7 @@
 
     } */
     .header__nav.open {
-        @apply right-0 opacity-100;
+        @apply right-[0] opacity-100;
     }
 
     .branding.open {
@@ -20,6 +20,10 @@
 
     .toggle-menu.open {
         @apply absolute right-3 top-3;
+    }
+
+    .body.open {
+        @apply overflow-hidden
     }
 }
 

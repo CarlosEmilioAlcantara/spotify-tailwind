@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
+<body class="body">
     <!-- <header class="header">
         .container>.header__wrapper>.branding+nav.header__nav>ul>li*3>a = emmet abbreviation: > inside, + below, * [number] make multiple
         <div class="container">
@@ -29,13 +29,13 @@
         </div>
     </header> -->
     <header class="header bg-black">
-        <div class="container p-3 lg:py-4 lg:max-w-6xl">
+        <div class="container p-3 lsm:max-w-3xl md:max-w-5xl lsm:py-4 lg:py-4 lg:max-w-6xl">
             <div class="header__wrapper flex justify-between items-center">
-                <div class="branding z-50 sm:w-96 md:w-3/5 lg:w-3/5">
+                <div class="branding z-50 sm:w-96 w-96 lsm:w-96 md:w-3/5 lg:w-3/5">
                     <a href=""><img src="../images/logo.svg"></a>
                 </div>
 
-                <nav class="header__nav absolute w-[100vw] h-[100vh] top-0 right-[-100vw] bg-black duration-500 ease-in-out lg:static lg:w-auto lg:h-auto lg:right-0 md:static md:w-auto md:h-auto md:right-0">
+                <nav class="header__nav absolute w-[80vw] h-[100vh] top-0 right-[-100vw] bg-black duration-500 ease-in-out lg:static lg:w-auto lg:h-auto lg:right-0 md:static md:w-auto md:h-auto md:right-0">
                     <div class="p-10 flex flex-col gap-9 z-[9999] md:flex-row md:p-0 lg:flex-row lg:p-0">
                         <ul class="text-white space-y-6 text-3xl font-bold md:flex md:space-y-0 md:gap-8 md:mb-4 lg:flex lg:space-y-0 lg:gap-8 lg:mb-4">
                             <li><a href="#" class="md:text-base lg:text-base hover:transition-none hover:text-hover">Premium</a></li>
@@ -44,15 +44,20 @@
                         </ul>
 
                         <div class="">
-                            <span class="block border-t-2 border-white w-5 md:hidden lg:hidden"></span>
-                            <span class="block border-l-2 border-white h-4 mt-4"></span>
+                            <!-- <span class="block border-t-2 border-white w-5 md:hidden lg:hidden"></span>
+                            <span class="block border-l-2 border-white h-4 lsm:hidden mt-4"></span> -->
+                            <span class="block w-4 border-t-2 border-white md:rotate-90 lg:rotate-90 mt-6"></span>
                         </div>
 
                         <ul class="text-white space-y-6 text-2xl md:flex md:space-y-0 md:gap-8 md:mt-1 lg:flex lg:space-y-0 lg:gap-8 lg:mt-1">
                             <li><a href="#" class="md:text-base md:font-bold lg:text-base lg:font-bold hover:transition-none hover:text-hover">Sign&nbsp;up</a></li>
                             <li><a href="#" class="md:text-base md:font-bold lg:text-base lg:font-bold hover:transition-none hover:text-hover">Log&nbsp;in</a></li>
                         </ul>
-                    </div>
+
+                        <div class="branding z-50 flex h-[] sm:w-96 w-96 lsm:w-96 md:w-3/5 lg:w-3/5">
+                            <a href=""><img src="../images/logo.svg"></a>
+                        </div>
+                    </div>  
                 </nav>
                 <div class="toggle-menu z-50 md:hidden lg:hidden">
                     <span class="block bg-white w-6 h-1 mb-1 rounded-sm duration-500 ease-in-out"></span>
@@ -65,60 +70,60 @@
 
     <!-- to grid or to flex-col? -->
     <section class="banner bg-banner">
-        <div class="container sm:pt-5 sm:pr-4 sm:pb-28 sm:pl-4 lg:pt-20 md:max-w-5xl lg:max-w-6xl">
-            <div class="banner__wrapper md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center">
+        <div class="container sm:pt-5 sm:pr-4 sm:pb-28 sm:pl-4 lg:pt-20 lsm:max-w-3xl lsm:pt-10 lsm:pb-16 md:pt-10 md:pb-16 md:max-w-5xl lg:max-w-6xl">
+            <div class="banner__wrapper lsm:flex lsm:justify-between lsm:items-center md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center">
                 <div class="banner__content">
-                    <div class="banner__header text-indigo-800 grid grid-cols-1 gap-3 py-6 md:gap-8 md:mb-6 lg:gap-8 lg:mb-6">
-                        <div class="max-w-xs md:max-w-xl lg:max-w-xl">
-                            <h1 class="text-2xl font-bold md:text-4xl lg:text-4xl">Get Premium free for 2 months</h1>
+                    <div class="banner__header text-indigo-800 grid grid-cols-1 gap-3 py-6 lsm:gap-8 lsm:mb-6 md:gap-8 md:mb-6 lg:gap-8 lg:mb-6">
+                        <div class="max-w-xl lsm:max-w-xl md:max-w-xl lg:max-w-xl">
+                            <h1 class="text-2xl font-bold lsm:text-4xl md:text-4xl lg:text-4xl">Get Premium free for 2 months</h1>
                         </div>
-                        <h2 class="text-lg font-normal md:text-xl md:font-semibold lg:text-xl lg:font-semibold">Only $9.99/month after. Cancel anytime.</h2>
+                        <h2 class="text-lg font-normal lsm:text-xl lsm:font-semibold md:text-xl md:font-semibold lg:text-xl lg:font-semibold">Only $9.99/month after. Cancel anytime.</h2>
                     </div>
-                    <div class="banner__buttons grid grid-cols-1 gap-2 mb-10 md:flex md:flex-row lg:flex lg:flex-row">
-                        <a href="#" class="text-banner bg-indigo-800 rounded-full text-sm px-5 py-2.5 text-center border-2 border-indigo-800 inline-block font-medium hover:scale-105 md:px-9 md:py-4 lg:px-9 lg:py-4">GET STARTED</a>
-                        <a href="#" class="text-center py-2.5 px-5 text-sm font-semibold text-indigo-800 border-2 border-indigo-800 rounded-full inline-block hover:scale-105 md:px-9 md:py-4 lg:px-9 lg:py-4">VIEW PLANS</a>
+                    <div class="banner__buttons grid grid-cols-1 gap-2 mb-10 lsm:flex lsm:flex-row md:flex md:flex-row lg:flex lg:flex-row">
+                        <a href="#" class="text-banner bg-indigo-800 rounded-full text-sm px-5 py-2.5 text-center border-2 border-indigo-800 inline-block font-medium hover:scale-105 lsm:px-9 lsm:py-4 md:px-9 md:py-4 lg:px-9 lg:py-4">GET STARTED</a>
+                        <a href="#" class="text-center py-2.5 px-5 text-sm font-semibold text-indigo-800 border-2 border-indigo-800 rounded-full inline-block hover:scale-105 lsm:px-9 lsm:py-4 md:px-9 md:py-4 lg:px-9 lg:py-4">VIEW PLANS</a>
                     </div>
-                    <div class="banner__terms md:max-w-xl lg:max-w-2xl">
+                    <div class="banner__terms lsm:max-w-xl md:max-w-xl lg:max-w-2xl">
                         <p class="text-xs text-indigo-800 mb-20"><span class="underline"><a href="">Terms and conditions apply</a></span>. Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023</p>
                     </div>
                 </div>
-                <div class="banner__img">
-                    <img src="../images/flamingo.png" class="block sm:w-80 md:h-56 md:w-80 lg:h-56 lg:w-80">
+                <div class="banner__img flex justify-center items-center">
+                    <img src="../images/flamingo.png" class="block sm:w-80 lsm:h-56 lsm:w-80 md:h-56 md:w-80 lg:h-56 lg:w-80">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="features">
-        <div class="container pt-8 pb-24 bg-white md:py-20 lg:py-24">
-            <div class="features__wrapper flex flex-col justify-between items-center gap-y-8 md:gap-y-16 lg:gap-y-16">
-                <div class="features__header">
-                    <h1 class="font-bold text-2xl md:text-4xl lg:text-4xl">Why go Premium?</h1>
+        <div class="container pt-8 pb-24 bg-white sm:px-3 sm:max-w-xl lsm:py-20 md:py-20 lg:py-24">
+            <div class="features__wrapper flex flex-col justify-between lsm:items-center md:items-center lg:items-center gap-y-8 lsm:gap-y-16 md:gap-y-16 lg:gap-y-16">
+                <div class="features__header sm:flex sm:items-center sm:justify-center">
+                    <h1 class="font-bold text-2xl lsm:text-4xl md:text-4xl lg:text-4xl">Why go Premium?</h1>
                 </div>
-                <div class="features__content grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-14 lg:grid-cols-4 lg:gap-14">
+                <div class="features__content grid grid-cols-1 gap-12 lsm:grid-cols-2 lsm:gap-14 md:grid-cols-2 md:gap-14 lg:grid-cols-4 lg:gap-14">
                     <div class="features__featuresitem flex gap-x-5 items-center lg:flex-col lg:text-center lg:gap-y-10">
-                        <img src="../images/features1.png" alt="" class="sm:w-24 lg:w-36">
+                        <img src="../images/features1.png" alt="" class="sm:w-24 lsm:w-24 md:w-24 lg:w-36">
                         <div class="text flex flex-col gap-2.5">
                             <h2 class="text-xl font-bold">Download music.</h2>
                             <p>Listen anywhere.</p>
                         </div>
                     </div>
                     <div class="features__featuresitem flex gap-x-5 items-center lg:flex-col lg:text-center lg:gap-y-10">
-                        <img src="../images/features2.png" alt="" class="sm: w-24 lg:w-36">
+                        <img src="../images/features2.png" alt="" class="sm:w-24 lsm:w-24 md:w-24 lg:w-36">
                         <div class="text flex flex-col gap-2.5">
                             <h2 class="text-xl font-bold">Ad-free music listening.</h2>
                             <p>Enjoy nonstop music.</p>
                         </div>
                     </div>
                     <div class="features__featuresitem flex gap-x-5 items-center lg:flex-col lg:text-center lg:gap-y-10">
-                        <img src="../images/features3.png" alt="" class="sm: w-24 lg:w-36">
+                        <img src="../images/features3.png" alt="" class="sm:w-24 lsm:w-24 md:w-24 lg:w-36">
                         <div class="text flex flex-col gap-2.5">
                             <h2 class="text-xl font-bold">Play any song.</h2>
                             <p>Even on mobile.</p>
                         </div>
                     </div>
                     <div class="features__featuresitem flex gap-x-5 items-center lg:flex-col lg:text-center lg:gap-y-10">
-                        <img src="../images/features4.png" alt="" class="sm: w-24 lg:w-36">
+                        <img src="../images/features4.png" alt="" class="sm:w-24 lsm:w-24 md:w-24 lg:w-36">
                         <div class="text flex flex-col gap-2.5">
                             <h2 class="text-xl font-bold">Unlimited skips.</h2>
                             <p>Just hit next.</p>
@@ -130,10 +135,10 @@
     </section>
 
     <section class="pricing bg-gray-100">
-        <div class="container pt-8 pb-16 md:py-20 lg:max-w-6xl">
+        <div class="container pt-8 pb-16 lsm:py-20 md:py-20 lg:max-w-6xl">
             <div class="pricing__wrapper flex flex-col items-center gap-y-12">
-                <div class="pricing__header flex flex-col gap-y-2 text-center sm:max-w-sm md:max-w-xl lg:max-w-xl">
-                    <h1 class="text-2xl font-bold md:text-3xl lg:text-4xl">Pick your Premium</h1>
+                <div class="pricing__header flex flex-col gap-y-2 text-center sm:max-w-sm lsm:max-w-xl md:max-w-xl lg:max-w-xl">
+                    <h1 class="text-2xl font-bold lsm:text-3xl md:text-3xl lg:text-4xl">Pick your Premium</h1>
                     <p>Listen without limits on your phone, speaker, and other devices.</p>
                     <ul class="pricing__methods flex items-center justify-center">
                         <li><img src="../images/visa.svg" ></li>
@@ -144,17 +149,17 @@
                     </ul>
                 </div>
 
-                <div class="pricing__cards grid grid-cols-1 gap-y-3 sm:max-w-[372px] md:max-w-md lg:grid lg:grid-cols-4 lg:max-w-6xl lg:gap-x-4 lg:grid-rows-1">
+                <div class="pricing__cards grid grid-cols-1 gap-y-3 sm:max-w-[372px] lsm:max-w-md md:max-w-md lg:grid lg:grid-cols-4 lg:max-w-6xl lg:gap-x-4 lg:grid-rows-1">
                     <div class="pricing__card bg-white p-4 rounded-2xl shadow-2xl">
                         <div class="">
                             <span class="text-sm font-bold bg-blue-500 text-white p-1.5 rounded-md">2 months free</span>
                             <h2 class="text-xl font-bold mt-2">Individual</h2>
                             <p>$9.99/month after offer period</p>
                             <p>1 account</p>
-                            <span class="block w-full border-t-2 border-black mt-5 mb-5 md:mb-8"></span>
+                            <span class="block w-full border-t-2 border-black mt-5 mb-5 lsm:mb-8 md:mb-8"></span>
                         </div>
 
-                        <ul class="md:mb-8 lg:h-[13.7rem]">
+                        <ul class="lsm:mb-8 md:mb-8 lg:h-[13.7rem]">
                             <li class="flex gap-3 items-center"><i class="fa fa-check"></i>Ad-free music listening</li>
                             <li class="flex gap-3 items-center"><i class="fa fa-check"></i>Play anywhere - even offline</li>
                             <li class="flex gap-3 items-center"><i class="fa fa-check"></i>On-demand playback</li>
@@ -176,10 +181,10 @@
                             <h2 class="text-xl font-bold mt-2">Duo</h2>
                             <p>$12.99/month after offer period</p>
                             <p>2 accounts</p>
-                            <span class="block w-full border-t-2 border-black mt-5 mb-5 md:mb-8"></span>
+                            <span class="block w-full border-t-2 border-black mt-5 mb-5 lsm:mb-8 md:mb-8"></span>
                         </div>
 
-                        <ul class="md:mb-8 lg:h-[13.7rem]">
+                        <ul class="lsm:mb-8 md:mb-8 lg:h-[13.7rem]">
                             <li class="flex gap-3"><i class="fa fa-check mt-1.5"></i>2 Premium accounts for a couple under one roof</li>
                             <li class="flex gap-3"><i class="fa fa-check mt-1.5"></i>Ad-free music listening, play offline, on-demand playback</li>
                         </ul>
@@ -200,11 +205,11 @@
                             <h2 class="text-xl font-bold mt-2">Family</h2>
                             <p>$15.99/month after offer period</p>
                             <p>6 accounts</p>
-                            <span class="block w-full border-t-2 border-black mt-5 mb-5 md:mb-8"></span>
+                            <span class="block w-full border-t-2 border-black mt-5 mb-5 lsm:mb-8 md:mb-8"></span>
 
                         </div>
 
-                        <ul class="md:mb-8 lg:h-[13.7rem]">
+                        <ul class="lsm:mb-8 md:mb-8 lg:h-[13.7rem]">
                             <li class="flex gap-3"><i class="fa fa-check mt-1.5"></i>6 Premium accounts for family members living under one roof</li>
                             <li class="flex gap-3 "><i class="fa fa-check mt-1.5"></i>Block explicit music</li>
                             <li class="flex gap-3 "><i class="fa fa-check mt-1.5"></i>Ad-free music listening, play offline, on-demand playback</li>
@@ -227,10 +232,10 @@
                             <h2 class="text-xl font-bold mt-2">Student</h2>
                             <p>$4.99/month after offer period</p>
                             <p>1 account</p>
-                            <span class="block w-full border-t-2 border-black mt-5 mb-5 md:mb-8"></span>
+                            <span class="block w-full border-t-2 border-black mt-5 mb-5 lsm:mb-8 md:mb-8"></span>
                         </div>
 
-                        <ul class="md:mb-8 lg:h-[13.7rem]">
+                        <ul class="lsm:mb-8 md:mb-8 lg:h-[13.7rem]">
                             <li class="flex gap-3 "><i class="fa fa-check mt-1.5"></i>Hulu (With Ads) plan</li>
                             <li class="flex gap-3 "><i class="fa fa-check mt-1.5"></i>Ad-free music listening</li>
                             <li class="flex gap-3 "><i class="fa fa-check mt-1.5"></i>Play anywhere - even offline</li>
@@ -253,22 +258,22 @@
     </section>
 
     <footer class="footer bg-black">
-        <div class="container px-4 py-12 lg:max-w-6xl">
+        <div class="container px-4 py-12 lsm:max-w-3xl md:max-w-5xl lg:max-w-6xl lg:max-w">
             <!-- <div class="footer__wrapper lg:grid lg:grid-cols-"> -->
-                <div class="footer__links flex flex-col gap-14 md:flex-row md:gap-0 md:justify-between lg:flex-row lg:gap-0 lg:justify-between">
-                    <div class="md:grid md:grid-cols-4 md:gap-14 lg:grid lg:grid-cols-4 lg:gap-14">
-                        <div class="branding z-50 sm:w-96 md:w-[40rem] lg:w-[40rem]">
+                <div class="footer__links sm:flex sm:flex-col sm:gap-14 md:flex-row md:gap-0 md:justify-between lg:flex-row lg:gap-0 lg:justify-between">
+                    <div class=" sm:flex sm:flex-col sm:gap-14 lsm:grid lsm:grid-cols-3 lsm:gap-14 md:grid md:grid-cols-4 md:gap-14 lg:grid lg:grid-cols-4 lg:gap-14">
+                        <div class="branding z-50 sm:w-96 lsm:w-96 md:col-start-1 md:w-[40rem] lg:w-[40rem]">
                             <a href=""><img src="../images/logo.svg"></a>
                         </div>
         
-                        <dl class="space-y-5">
+                        <dl class="space-y-5 lsm:col-start-1 md:col-start-2">
                             <dt class="text-gray-400 text-xs uppercase font-bold tracking-widest">Company</dt>
                             <dd class="text-white hover:text-hover"><a href="">About</a></dd>
                             <dd class="text-white hover:text-hover"><a href="">Jobs</a></dd>
                             <dd class="text-white hover:text-hover"><a href="">For the Record</a></dd>
                         </dl>
         
-                        <dl class="space-y-5">
+                        <dl class="space-y-5 lsm:col-start-2 md:col-start-3">
                             <dt class="text-gray-400 text-xs uppercase font-bold tracking-widest">Communities</dt>
                             <dd class="text-white hover:text-hover"><a href="">For Artists</a></dd>
                             <dd class="text-white hover:text-hover"><a href="">Developers</a></dd>
@@ -278,7 +283,7 @@
                             <dd class="text-white hover:text-hover"><a href="">Spotify for Work</a></dd>
                         </dl>
 
-                        <dl class="space-y-5">
+                        <dl class="space-y-5 lsm:col-start-3 md:col-start-4">
                             <dt class="text-gray-400 text-xs uppercase font-bold tracking-widest">Useful Links</dt>
                             <dd class="text-white hover:text-hover"><a href="">Support</a></dd>
                             <dd class="text-white hover:text-hover"><a href="">Web Player</a></dd>
@@ -299,13 +304,13 @@
 
                 <div class="">
                     <div class="footer__country text-gray-400 flex flex-row-reverse items-center gap-2 my-4">
-                        <p class="text-[10px] hover:text-hover"><a href="">USA</a></p>
+                        <p class="text-[10px] lsm:text-xs md:text-xs lg:text-xs hover:text-hover"><a href="">USA</a></p>
                         <i class="fa fa-earth-americas fa-xs"></i>
                     </div>
 
                     <div class="footer__support flex justify-between">
-                        <div class="text-gray-400 text-[10px]">
-                            <div class="grid grid-cols-1 gap-5 md:flex lg:flex">
+                        <div class="text-gray-400 text-[10px] lsm:text-xs md:text-xs lg:text-xs">
+                            <div class="grid grid-cols-1 gap-5 mr-20 lsm:flex lsm:flex-wrap md:flex lg:flex">
                                 <div class="flex gap-7">
                                     <a href="" class="hover:text-hover">Legal</a><a href="" class="hover:text-hover">Privacy Center</a><a href="" class="hover:text-hover">Privacy Policy</a>
                                 </div>
@@ -338,7 +343,7 @@
                                 </div>
                             </div> -->
                         </div>
-                        <p class="text-gray-400 text-[10px]">© 2023 Spotify AB</p>
+                        <p class="text-gray-400 text-[10px] lsm:text-xs md:text-xs lg:text-xs">©&nbsp;2023&nbsp;Spotify&nbsp;AB</p>
                     </div>
                 </div>
             </div>
