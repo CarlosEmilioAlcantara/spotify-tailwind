@@ -2,7 +2,7 @@
 This is a static site clone of the Spotify (an [older version](https://web.archive.org/web/20230703185110/https://www.spotify.com/us/premium/)) premium site using tailwind.
 
 # Live Version
-A live version of the site can be found [here](https://spotify-tailwind.pages.dev/)
+A live version of the site can be found [here](https://spotify-tailwind.pages.dev/).
 
 # Deployment
 To deploy the site using CloudFlare Pages using direct upload:
